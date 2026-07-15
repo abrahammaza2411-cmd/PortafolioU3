@@ -12,7 +12,7 @@
 
 ### Definición de Grafo
 
-Se describe formalmente como una tripleta \(G = (V, E, \phi)\), donde \(V\) es un conjunto de vértices, \(E\) de aristas y \(\phi\) es la función de incidencia.
+Se describe formalmente como una tripleta \(G = (V, E, φ\), donde \(V\) es un conjunto de vértices, \(E\) de aristas y \(\φ\) es la función de incidencia.
 
 ### Terminología Clave
 
