@@ -42,56 +42,77 @@ Un árbol es un grafo conexo acíclico. Se estudian árboles binarios de búsque
 
 ## Ejercicios resueltos
 
-### Ejercicio 1: Isomorfismo de Grafos
+### Ejercicio 1: Análisis de Isomorfismo entre Grafos
 
-**Problema:** Determinar si los grafos \(G_1\) y \(G_2\) son isomorfos.
+**Planteamiento:** Dados dos grafos \(G_1\) y \(G_2\), determinar si la función \(f: G_1 \to G_2\) que mapea \(\{a,b,c,d,e,f,g\}\) a \(\{v_4, v_5, v_1, v_6, v_2, v_3, v_7\}\) define un isomorfismo.
 
-**Procedimiento:** Se comparan los grados de los vértices. En \(G_1\), el vértice \(c\) tiene grado 2, pero en el mapeo propuesto a \(G_2\), el vértice \(v_1\) tiene grado 3.
+**Desarrollo:**
+1.  **Verificación de Grados:** Se calculan las valencias de los vértices en ambos grafos. En \(G_1\), el vértice \(c\) tiene un grado de **2**. Sin embargo, en el mapeo propuesto, \(f(c) = v_1\), y el vértice \(v_1\) en \(G_2\) tiene un grado de **3**.
+2.  **Preservación de Aristas:** Al analizar la conexión, se observa que en \(G_1\) no existe una arista entre \(a\) y \(c\), pero en \(G_2\) sí existe una arista entre sus imágenes \(v_4\) y \(v_1\).
 
-**Resultado:** No son isomorfos bajo la función \(f\), ya que no conservan la estructura de grados ni las aristas correspondientes.
+**Conclusión:** La función \(f\) **no es un isomorfismo** porque no preserva ni los grados de los vértices ni la estructura de adyacencia.
 
----
-
-### Ejercicio 2: Demostración de la Fórmula de Euler
-
-**Problema:** Demostrar \(V - A + C = 2\) mediante inducción sobre las aristas.
-
-**Procedimiento:**
-
-- **Caso base:** Un vértice, 0 aristas, 1 cara (\(1 - 0 + 1 = 2\)).
-- **Paso inductivo:** Al añadir una arista, o bien se añade un vértice (V y A aumentan en 1, manteniendo la igualdad), o bien se cierra un ciclo (A y C aumentan en 1, manteniendo la igualdad).
-
-**Resultado:** La fórmula es válida para cualquier grafo plano conectado.
+**Solución Correcta:** Para un isomorfismo real, se debe usar una función \(g\) que empareje correctamente los grados: \(g(b)=v_5\) (ambos grado 5), y los de grado 2 y 3 según sus conexiones específicas.
 
 ---
 
-### Ejercicio 3: Coloreado de un Cubo
+### Ejercicio 2: Demostración Inductiva de la Fórmula de Euler
 
-**Problema:** ¿Cuál es el número cromático de un cubo?
+**Planteamiento:** Demostrar que para todo grafo plano conectado se cumple \(V - A + C = 2\).
 
-**Procedimiento:** Un cubo solo tiene ciclos de longitud par (caras cuadradas), lo que lo define como un grafo bipartito.
+**Desarrollo:**
+1.  **Caso Base:** Un grafo con un solo vértice y 0 aristas. Aquí \(V=1, A=0, C=1\) (la región exterior). Entonces: \(1 - 0 + 1 = 2\). Se cumple.
+2.  **Hipótesis Inductiva:** Asumimos que la fórmula es válida para un grafo con \(k\) aristas (\(V - k + C = 2\)).
+3.  **Paso Inductivo (Añadir arista \(k+1\)):**
+    - **Escenario A:** La nueva arista conecta un vértice existente con uno nuevo. \(V\) aumenta en 1 y \(A\) aumenta en 1. La ecuación queda \((V+1) - (k+1) + C = V - k + C = 2\).
+    - **Escenario B:** La nueva arista conecta dos vértices ya existentes, cerrando un ciclo. \(A\) aumenta en 1 y \(C\) (caras) aumenta en 1. La ecuación queda \(V - (k+1) + (C+1) = V - k + C = 2\).
 
-**Resultado:** El número mínimo de colores es **2**.
-
----
-
-### Ejercicio 4: Triángulo Monocromático en \(K_6\)
-
-**Problema:** Demostrar que en un grafo completo de 6 vértices coloreado con dos colores siempre hay un triángulo monocromático.
-
-**Procedimiento:** Aplicando el **Principio del Palomar**, un vértice \(v\) tiene 5 aristas; al menos 3 deben ser del mismo color (ej. rojo). Si alguna arista entre esos 3 vecinos es roja, se forma el triángulo; si ninguna lo es, los 3 vecinos forman un triángulo del otro color.
-
-**Resultado:** La existencia de un triángulo monocromático está garantizada.
+**Conclusión:** En ambos casos la relación se mantiene, demostrando la validez universal de la fórmula para grafos planos.
 
 ---
 
-### Ejercicio 5: Cobertura de Vértices y Emparejamiento
+### Ejercicio 3: Teorema del Triángulo Monocromático en \(K_6\)
 
-**Problema:** Relación entre el tamaño de la cobertura mínima y el emparejamiento máximo.
+**Planteamiento:** Demostrar que si se colorean las aristas de un grafo completo de 6 vértices (\(K_6\)) con dos colores (rojo y azul), siempre existirá un triángulo de un solo color.
 
-**Procedimiento:** Se utiliza la desigualdad \(\nu(G) \le \tau(G) \le 2\nu(G)\). En grafos bipartitos, ambos valores coinciden.
+**Desarrollo:**
+1.  **Principio del Palomar:** Seleccionamos un vértice cualquiera \(v\). En \(K_6\), \(v\) tiene 5 aristas incidentes. Al haber solo 2 colores, al menos **3 aristas** deben tener el mismo color (digamos rojo).
+2.  **Análisis de Vecinos:** Sean \(v_1, v_2, v_3\) los vértices conectados a \(v\) por aristas rojas. Analizamos las aristas entre ellos: \(\{v_1, v_2\}, \{v_2, v_3\}, \{v_1, v_3\}\).
+3.  **Casuística:**
+    - Si **alguna** de estas tres aristas es roja (ej. \(\{v_1, v_2\}\)), se forma un triángulo rojo con \(v\) (\(v-v_1-v_2\)).
+    - Si **ninguna** es roja, entonces las tres deben ser azules, formando un triángulo azul entre ellas (\(v_1-v_2-v_3\)).
 
-**Resultado:** En grafos generales, la cobertura puede ser hasta el doble del emparejamiento.
+**Conclusión:** La existencia de un triángulo monocromático es inevitable en \(K_6\).
+
+---
+
+### Ejercicio 4: Ejecución del Algoritmo de Dijkstra
+
+**Planteamiento:** Hallar la ruta más corta entre el nodo **A** y el nodo **G** en un grafo ponderado.
+
+**Desarrollo Paso a Paso:**
+1.  **Inicialización:** Etiqueta de \(A = 0\), los demás \(\infty\). Conjunto permanente: \(\emptyset\).
+2.  **Paso 1:** Se elige **A** (mínimo 0). Relajación de vecinos: \(B\) pasa a 3 (\(0+3\)) y \(C\) pasa a 2 (\(0+2\)). Permanente: \(\{A\}\).
+3.  **Paso 2:** El menor no permanente es **C** (2). Relajación de su vecino \(F\): \(2+5=7\). Permanente: \(\{A, C\}\).
+4.  **Paso 3:** El menor es **B** (3). Relajación de vecinos: \(D\) pasa a 7 (\(3+4\)) y \(E\) pasa a 5 (\(3+2\)). Permanente: \(\{A, C, B\}\).
+5.  **Paso 4:** El menor es **E** (5). Relajación de su vecino \(G\): \(5+3=8\). Permanente: \(\{A, C, B, E\}\).
+6.  **Paso 5:** Se procesan \(D\) y \(F\) (ambos costo 7). No mejoran la distancia de \(G\) (ruta por \(F\) sería \(7+2=9\), mayor que 8).
+
+**Resultado:** El camino mínimo es **A → B → E → G** con un costo total de **8**.
+
+---
+
+### Ejercicio 5: Recorridos BFS y DFS (Búsqueda en Grafos)
+
+**Planteamiento:** Documentar el orden de descubrimiento de nodos en un grafo conectado empezando desde el nodo **A**.
+
+**Desarrollo BFS (Anchura):**
+- Utiliza una **cola (FIFO)**. Se visita \(A\), luego sus vecinos directos \(B\) y \(C\). Después se visitan los vecinos de \(B\) (\(D, E\)) y luego los de \(C\) (\(F\)). Finalmente los de \(E\) (\(G\)).
+- **Orden:** A → B → C → D → E → G → F.
+
+**Desarrollo DFS (Profundidad):**
+- Utiliza una **pila (LIFO)**. Se explora una rama lo más profundo posible: \(A \to B \to D\). Al llegar a un tope (nodo hoja), se hace *backtracking* a \(B\) y se explora \(E\), luego \(G\), luego \(F\) y finalmente \(C\).
+- **Orden:** A → B → D → E → G → F → C.
 
 ---
 
