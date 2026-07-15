@@ -4,6 +4,7 @@
 - [Ejercicios resueltos](#ejercicios-resueltos)
 - [Ejercicio aplicado en un caso real](#ejercicio-aplicado-en-un-caso-real)
 - [Reflexión personal](#reflexión-personal)
+- [Actividades](#actividades) 
 
 
 ---
@@ -295,7 +296,7 @@ Comprendí con precisión la estructura de las tablas de verdad, logrando clasif
 La lógica constituye el lenguaje de bajo nivel fundamental para el control de flujo en estructuras condicionales y ciclos. Su aplicación permite optimizar algoritmos mediante la reducción de comparaciones redundantes, elevando la calidad técnica y la eficiencia en el desarrollo de software.
 
 ---
-
+## actividades
 
 - [Actividades Practico Experimentales](APEU1.md)
 - [Actividades Autonomas](AAU1.md)
