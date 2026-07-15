@@ -1,21 +1,3 @@
-# UNIVERSIDAD NACIONAL DE LOJA
-
-**COMPUTACIÓN**  
-**Ciclo 1 A**  
-**Matemáticas Discretas**  
-**ACTIVIDAD AUTÓNOMA**
-
-Actividad Nro. 003  
-**Unidad 3**
-
-**DOCENTE:** Ing. Mario Enrique Cueva Hurtado  
-**ESTUDIANTE:** Jose Camilo Merino Morocho, Edgar Fabricio Rios Cuenca, Ashley Patricia Mocha Valarezo, Abraham Daniel Maza Lapo  
-**TEMA:** Teoría de Grafos, Algoritmos de Búsqueda, Árboles y Aplicaciones Computacionales  
-**Ciclo:** 1er Ciclo A  
-**Fecha:** Julio de 2026
-
----
-
 ## Índice
 
 - [Resumen teórico](#resumen-teórico)
