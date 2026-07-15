@@ -1,2 +1,5 @@
-# PortafolioU3
-Actividad portafolio para Matematicas Discretas Unidad 3
+# Portafolio Matematicas Discretas
+Unidad 1
+Unidad 2 (No se realizo portafolio)
+Unidad 3
+
