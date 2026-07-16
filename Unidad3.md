@@ -215,7 +215,7 @@ Se modeló un grupo de 8 amigos donde las aristas representan los años de amist
 - **Caminos Críticos:** Los nodos C, D y F son críticos para la conexión del grupo.
 
 ### Resultado del análisis
-Mediante el algoritmo de Dijkstra, se determinó que el camino más corto (en años de amistad acumulados) entre Ana y Hugo es \(A \rightarrow C \rightarrow E \rightarrow F \rightarrow H\), con un total de **15 años**.
+Mediante el algoritmo de Dijkstra, se determinó que el camino más corto (en años de amistad acumulados) entre Ana y Hugo es `A → B → C → D → E → G → F → H`, con un total de **15 años**.
 
 ---
 
