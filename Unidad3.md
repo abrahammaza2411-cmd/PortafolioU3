@@ -1,7 +1,7 @@
 <!-- ============================================ -->
 <!--            NAVEGACIÓN RÁPIDA (UNIDADES)       -->
 <!-- ============================================ -->
-## Navegación rápida
+## Navegación rápida (Clic en el emoji)
 
 <div align="center">
   <table>
