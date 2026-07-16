@@ -10,7 +10,7 @@
         <a href="Unidad1.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">1️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 1</h3>
-          <p style="margin:0; color:#586069;">Introducción y teoría</p>
+          <p style="margin:0; color:#586069;">Lógica proposicional</p>
         </a>
       </td>
       <!-- Resaltamos la Unidad 2 (donde estamos actualmente) -->
