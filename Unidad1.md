@@ -1,5 +1,5 @@
 <!-- ============================================ -->
-<!--            NAVEGACIÓN RÁPIDA (opcional)      -->
+<!--            NAVEGACIÓN RÁPIDA (UNIDADES)       -->
 <!-- ============================================ -->
 ## Navegación rápida
 
@@ -10,21 +10,21 @@
         <a href="Unidad1.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">1️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 1</h3>
-          <p style="margin:0; color:#586069;">Introducción y primeros ejercicios</p>
+          <p style="margin:0; color:#586069;">Lógica proposicional</p>
         </a>
       </td>
       <td align="center" style="padding:15px; width:200px;">
         <a href="Unidad2.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">2️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 2</h3>
-          <p style="margin:0; color:#586069;">Teoría y práctica</p>
+          <p style="margin:0; color:#586069;">Actividades y evaluaciones</p>
         </a>
       </td>
-      <td align="center" style="padding:15px; width:200px;">
+      <td align="center" style="padding:15px; width:200px; background-color:#f6f8fa; border-radius:8px;">
         <a href="Unidad3.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">3️⃣</span>
-          <h3 style="margin:8px 0 4px 0;">Unidad 3</h3>
-          <p style="margin:0; color:#586069;">Ejercicios avanzados</p>
+          <h3 style="margin:8px 0 4px 0; color:#0366d6;">Unidad 3</h3>
+          <p style="margin:0; color:#586069;">Árboles, grafos y estructuras</p>
         </a>
       </td>
     </tr>
@@ -34,30 +34,45 @@
 ---
 
 <!-- ============================================ -->
+<!--          ENCABEZADO DE LA UNIDAD 3            -->
+<!-- ============================================ -->
+## 📂 Unidad 3: Árboles, Grafos y Estructuras de Datos
+
+> En la arquitectura de la computación moderna, los árboles y grafos no solo actúan como contenedores de información, sino como el núcleo determinante de la eficiencia algorítmica. Esta unidad evalúa los compromisos algorítmicos (*trade-offs*) entre diversas estructuras jerárquicas, analizando sus fundamentos teóricos y la rigurosidad de los recorridos sistemáticos.
+
+---
+
+<!-- ============================================ -->
 <!--                  ÍNDICE MEJORADO              -->
 <!-- ============================================ -->
 ## 📑 Índice
 
-<table align="center" style="border-collapse: collapse; width: 80%;">
+<table align="center" style="border-collapse: collapse; width: 85%;">
   <tr>
     <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
+      <a href="#introducción-y-marco-estratégico" style="text-decoration: none; font-weight: bold; color: #0366d6;">🎯 Introducción</a>
+    </td>
+    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
       <a href="#resumen-teórico" style="text-decoration: none; font-weight: bold; color: #0366d6;">📘 Resumen teórico</a>
+    </td>
+    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
+      <a href="#optimización-y-compresión" style="text-decoration: none; font-weight: bold; color: #0366d6;">📊 Optimización</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
+      <a href="#metodología-de-recorridos" style="text-decoration: none; font-weight: bold; color: #0366d6;">🔄 Recorridos</a>
     </td>
     <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
       <a href="#ejercicios-resueltos" style="text-decoration: none; font-weight: bold; color: #0366d6;">📝 Ejercicios resueltos</a>
     </td>
     <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
-      <a href="#ejercicio-aplicado" style="text-decoration: none; font-weight: bold; color: #0366d6;">🤖 Ejercicio aplicado</a>
+      <a href="#reflexión-personal" style="text-decoration: none; font-weight: bold; color: #0366d6;">💭 Reflexión</a>
     </td>
   </tr>
   <tr>
-    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
-      <a href="#reflexión-personal" style="text-decoration: none; font-weight: bold; color: #0366d6;">💭 Reflexión personal</a>
-    </td>
-    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
-      <a href="#actividades" style="text-decoration: none; font-weight: bold; color: #0366d6;">📌 Actividades</a>
-    </td>
-    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">
+    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;" colspan="3">
+      <a href="#actividades" style="text-decoration: none; font-weight: bold; color: #0366d6;">📌 Actividades</a> &nbsp;|&nbsp; 
       <a href="#regresar" style="text-decoration: none; font-weight: bold; color: #0366d6;">🔙 Regresar</a>
     </td>
   </tr>
@@ -66,311 +81,200 @@
 ---
 
 <!-- ============================================ -->
+<!--       SECCIÓN 1: INTRODUCCIÓN ESTRATÉGICA    -->
+<!-- ============================================ -->
+## 🎯 Introducción y Marco Estratégico
+
+La transición de estructuras lineales a jerárquicas permite modelar la complejidad inherente de sistemas de archivos, redes de comunicación y motores de inferencia. El objetivo primordial de este portafolio es evaluar los compromisos algorítmicos (*trade-offs*) entre diversas estructuras jerárquicas, analizando sus fundamentos teóricos, la mecánica de los códigos de prefijos y la rigurosidad de los recorridos sistemáticos para maximizar la velocidad de recuperación y procesamiento de datos.
+
+---
+
+<!-- ============================================ -->
 <!--             SECCIÓN: RESUMEN TEÓRICO          -->
 <!-- ============================================ -->
-## 📘 Resumen teórico
+## 📘 Resumen Teórico: Fundamentos de Árboles y Grafos
 
-### 🔹 Definición de proposición
-Una **proposición** es una entidad lógica que puede clasificarse como verdadera (1) o falsa (0). Se divide en:
+Como especialistas, entendemos que la implementación técnica carece de validez sin una formalización matemática previa. La robustez de un sistema depende de la adherencia a las propiedades estructurales que garantizan la predictibilidad del algoritmo.
 
-- **Simples:** Enunciados únicos e indivisibles que no contienen conectores lógicos (ejemplo: \(x > 5\)).
-- **Compuestas:** Resultan de unir dos o más proposiciones simples mediante conectores; su valor de verdad depende de sus componentes.
+### 🔹 Definición y Propiedades Críticas del Árbol
 
----
+Un **árbol** es un grafo conexo acíclico. Para un conjunto de \(n\) nodos, se deben cumplir estrictamente las siguientes propiedades:
 
-### 🔹 Conectores Lógicos
-Son elementos encargados de unir proposiciones:
+1. **Conectividad:** Existe al menos un camino entre cualquier par de vértices.
+2. **Aciclicidad:** La estructura prohíbe la existencia de circuitos cerrados; la adición de una sola arista crearía un ciclo.
+3. **Minimalidad de Aristas:** Un árbol posee exactamente \(n-1\) aristas.
+4. **Unicidad de Trayectoria:** Existe un único camino simple entre cualquier par de nodos.
+5. **Vulnerabilidad Estructural:** La eliminación de cualquier arista resulta en un grafo no conexo.
 
-| Conector | Símbolo | Significado | Lenguaje natural |
-|----------|---------|-------------|-------------------|
-| Negación | \(\neg\) | Invierte el valor de verdad | “no”, “es falso que”, “no es cierto que” |
-| Conjunción | \(\land\) | Verdadera solo si ambas son verdaderas | “y”, “pero”, “además”, “también” |
-| Disyunción | \(\lor\) | Falsa solo si ambas son falsas | “o” |
-| Condicional | \(\rightarrow\) | Falso solo si el primero es verdadero y el segundo falso | “si … entonces” |
-| Bicondicional | \(\leftrightarrow\) | Verdadera si ambos valores son iguales | “si y solo si” |
+### 🔹 Tipos de Árboles y su Justificación Técnica
 
----
+| Tipo | Descripción |
+| :--- | :--- |
+| **Árbol Libre** | Grafo conexo sin raíz designada. |
+| **Árbol Enraizado** | Establece una jerarquía clara mediante un nodo raíz. |
+| **Árbol Binario** | Restringe el grado de salida a un máximo de 2, facilitando búsquedas dicotómicas. |
+| **Árbol Binario Completo** | Optimiza el uso de memoria al llenar niveles de izquierda a derecha. |
+| **Árbol Binario Perfecto** | Estructura ideal donde todas las hojas residen en el mismo nivel. |
+| **Árbol Balanceado** | Mitiga la degradación del rendimiento al mantener una diferencia mínima de altura. |
+| **Árbol AVL** | Estabiliza el rendimiento mediante autorrotaciones para prevenir el peor escenario de \(O(n)\). |
+| **Árbol B y B+** | Estructuras multicamino esenciales para minimizar las operaciones de E/S (*Disk I/O*) en sistemas de archivos y bases de datos masivas. |
 
-### 🔹 Tablas de verdad
-Es una herramienta que sirve para determinar el valor de verdad de una proposición compuesta considerando todos los casos posibles. El número de filas se calcula con la fórmula \(2^n\), donde \(n\) es el número de proposiciones simples.
+### 🔹 Fundamentos de Grafos y Conectividad
 
-**Ejemplo:** \((p \land q) \land (\neg p \lor \neg q)\)
+La teoría de grafos define el **Orden** como el número de vértices y el **Tamaño** como el número de aristas. El **Grado** de un nodo determina su conectividad.
 
-<!-- Tabla con filas alternadas (para mejorar legibilidad) -->
-<table style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #f1f1f1;">
-    <tr>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(p\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(q\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(\neg p\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(\neg q\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(p \land q\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\(\neg p \lor \neg q\)</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">\((p \land q) \land (\neg p \lor \neg q)\)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color: #f9f9f9;"><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td></tr>
-    <tr style="background-color: #f9f9f9;"><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">1</td><td style="border:1px solid #ddd;padding:8px;text-align:center;">0</td></tr>
-  </tbody>
-</table>
+- **Caminos de Euler:** Un grafo conexo admite un camino de Euler si y solo si posee exactamente dos vértices de grado impar.
+- **Circuitos de Hamilton:** Se enfocan en visitar cada vértice exactamente una vez. Su resolución es un problema **NP-completo**, lo que subraya la necesidad de heurísticas en la optimización de rutas.
 
 ---
 
-### 🔹 Principales leyes lógicas
-Estas establecen **equivalencias lógicas** (\(\equiv\)), lo que significa que ambos lados de la relación siempre tienen el mismo valor de verdad.
+<!-- ============================================ -->
+<!--        SECCIÓN: OPTIMIZACIÓN Y COMPRESIÓN     -->
+<!-- ============================================ -->
+## 📊 Optimización y Compresión: Código de Huffman y Árboles de Búsqueda
 
-| Ley | Fórmula |
-|-----|---------|
-| **Idempotencia** | \(p \land p \equiv p\) / \(p \lor p \equiv p\) |
-| **Conmutativa** | \(p \land q \equiv q \land p\) / \(p \lor q \equiv q \lor p\) |
-| **Asociativa** | \((p \land q) \land r \equiv p \land (q \land r)\) / \((p \lor q) \lor r \equiv p \lor (q \lor r)\) |
-| **Distributiva** | \(p \land (q \lor r) \equiv (p \land q) \lor (p \land r)\) / \(p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)\) |
-| **Doble negación** | \(\neg (\neg p) \equiv p\) |
-| **Identidad** | \(p \land V \equiv p\), \(p \lor F \equiv p\), \(p \lor V \equiv V\), \(p \land F \equiv F\) |
-| **Complemento** | \(p \lor \neg p \equiv V\), \(p \land \neg p \equiv F\) |
-| **Condicional** | \(p \rightarrow q \equiv \neg p \lor q\) |
-| **Bicondicional** | \(p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)\) |
-| **Absorción** | \(p \land (p \lor q) \equiv p\), \(p \lor (p \land q) \equiv p\) |
-| **De Morgan** | \(\neg (p \land q) \equiv \neg p \lor \neg q\), \(\neg (p \lor q) \equiv \neg p \land \neg q\) |
+La ingeniería de software contemporánea exige el equilibrio entre la densidad de almacenamiento y la latencia de acceso.
+
+### 🔹 Código de Huffman (Compresión de Datos)
+
+El algoritmo de Huffman es un método de codificación estadística de longitud variable. Al asignar códigos binarios cortos a símbolos de alta frecuencia y códigos largos a los infrecuentes, se logra una compresión sin pérdidas. Su propiedad de **código de prefijo** asegura que ningún código sea el inicio de otro, garantizando una decodificación unívoca. Es el pilar de formatos como ZIP, JPEG, PNG, MP3 y algoritmos de compresión de texto.
+
+### 🔹 Árboles de Búsqueda Binaria (ABB) y Balanceo
+
+Un ABB impone un orden total: hijos menores a la izquierda, mayores a la derecha. Sin embargo, una inserción secuencial puede convertirlo en una lista ligada (\(O(n)\)). El **balanceo AVL** interviene mediante rotaciones que mitigan la asimetría y estabilizan el acceso a \(O(\log n)\), previniendo cuellos de botella en la indexación de bases de datos.
+
+### 🔹 Comparativa de Estructuras Especializadas
+
+| Estructura | Lógica de Reequilibrio | Determinante de Altura | Aplicación |
+| :--- | :--- | :--- | :--- |
+| **Heaps** | Propiedad de montón vía *Sift-up/Sift-down*. | Logarítmica respecto a \(n\). | Colas de prioridad (Dijkstra). |
+| **Tries** | Navegación por prefijos de caracteres. | Longitud de la clave (\(L\)), no \(n\). | Autocompletado, enrutamiento IP. |
+| **Árboles B** | División y fusión de nodos multicamino. | Mínima (estructura plana). | Bases de datos a gran escala. |
 
 ---
 
-### 🔹 Principales reglas de inferencia
-A diferencia de las leyes, estas formas válidas de razonamiento permiten extraer una conclusión a partir de premisas dadas.
+<!-- ============================================ -->
+<!--       SECCIÓN: METODOLOGÍA DE RECORRIDOS     -->
+<!-- ============================================ -->
+## 🔄 Metodología de Recorridos en Árboles Binarios
 
-| Regla | Forma |
-|-------|-------|
-| **Modus Ponendo Ponens (MPP)** | \(p \rightarrow q,\ p \therefore q\) |
-| **Modus Tollendo Tollens (MTT)** | \(p \rightarrow q,\ \neg q \therefore \neg p\) |
-| **Silogismo disyuntivo** | \(p \lor q,\ \neg p \therefore q\) |
-| **Silogismo hipotético puro** | \(p \rightarrow q,\ q \rightarrow r \therefore p \rightarrow r\) |
-| **Adjunción** | \(p,\ q \therefore p \land q\) |
-| **Simplificación** | \(p \land q \therefore p\) (y también \(\therefore q\)) |
-| **Adición** | \(p \therefore p \lor q\) |
+Para el procesamiento determinista de nodos en compiladores y motores de búsqueda, aplicamos la siguiente lógica algorítmica:
+
+| Recorrido | Orden de Visita | Uso Típico |
+| :--- | :--- | :--- |
+| **Preorden (NID)** | 1. Visitar Raíz → 2. Subárbol Izquierdo → 3. Subárbol Derecho. | Duplicación de estructuras y expresiones prefijas. |
+| **Inorden (IND)** | 1. Subárbol Izquierdo → 2. Visitar Raíz → 3. Subárbol Derecho. | Recuperación de datos en orden ascendente. |
+| **Postorden (IDN)** | 1. Subárbol Izquierdo → 2. Subárbol Derecho → 3. Visitar Raíz. | Eliminación de nodos (liberación de memoria) y evaluación de expresiones postfijas. |
 
 ---
 
 <!-- ============================================ -->
 <!--           SECCIÓN: EJERCICIOS RESUELTOS      -->
 <!-- ============================================ -->
-## 📝 Ejercicios resueltos
+## 📝 Desarrollo: Resolución Detallada de Ejercicios Prácticos
 
 ---
 
-### 🧩 Ejercicio 1
+### 🧩 Ejercicio 1: Inventario de Tienda de Tecnología
 
-\[
-[(¬p \lor q) \land (r \rightarrow ¬q) \land r] \equiv ¬p
-\]
+**Datos de entrada:** \([45, 23, 65, 12, 38, 52, 90]\)
 
-**Desarrollo:**
-- \(r \land (r \rightarrow ¬q) \equiv ¬q\) — Modus Ponens (MP)
-- \((¬p \lor q) \land ¬q \equiv ¬p\) — Silogismo Disyuntivo (SD)
-- **Resultado:** \(\neg p\)
+**Arquitectura del Árbol:**
+- **45** es la raíz.
+- **23** (< 45) va a la izquierda; **65** (> 45) va a la derecha.
+- **12** y **38** cuelgan de **23**; **52** y **90** cuelgan de **65**.
 
-**Tabla de verdad**
+**Resultados de Recorrido:**
 
-<table style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #f1f1f1;">
-    <tr>
-      <th style="border:1px solid #ddd;padding:6px;">\(p\)</th><th style="border:1px solid #ddd;padding:6px;">\(q\)</th><th style="border:1px solid #ddd;padding:6px;">\(r\)</th>
-      <th style="border:1px solid #ddd;padding:6px;">\(\neg p\)</th><th style="border:1px solid #ddd;padding:6px;">\(\neg q\)</th>
-      <th style="border:1px solid #ddd;padding:6px;">\(\neg p \lor q\)</th>
-      <th style="border:1px solid #ddd;padding:6px;">\(r \rightarrow \neg q\)</th>
-      <th style="border:1px solid #ddd;padding:6px;">Resultado</th>
-      <th style="border:1px solid #ddd;padding:6px;">\(\neg p\)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-  </tbody>
-</table>
+| Recorrido | Secuencia Resultante |
+| :--- | :--- |
+| **Preorden** | `[45, 23, 12, 38, 65, 52, 90]` |
+| **Inorden** | `[12, 23, 38, 45, 52, 65, 90]` |
+| **Postorden** | `[12, 38, 23, 52, 90, 65, 45]` |
+
+<div style="border-left: 4px solid #4caf50; padding-left: 16px; margin: 12px 0;">
+  <strong>✅ Verificación:</strong> El recorrido <strong>Inorden</strong> devuelve los elementos perfectamente ordenados de menor a mayor, validando la correcta inserción en el ABB.
+</div>
+
+---
+
+### 🧩 Ejercicio 2: Estación Meteorológica (Temperaturas)
+
+**Datos de entrada:** \([18, 24, 15, 20, 28, 16]\)
+
+**Lógica de Inserción:**
+- **18** (Raíz) → **15** (Izq), **24** (Der).
+- **16** cuelga a la derecha de **15**.
+- **20** (Izq) y **28** (Der) cuelgan de **24**.
+
+**Resultados:**
+
+| Recorrido | Secuencia Resultante |
+| :--- | :--- |
+| **Inorden** (Reporte ordenado) | `[15, 16, 18, 20, 24, 28]` |
+| **Postorden** | `[16, 15, 20, 28, 24, 18]` |
+
+---
+
+### 🧩 Ejercicio 3: Triage Médico de Alta Complejidad (14 Nodos)
+
+**Secuencia de inserción:** \([60, 35, 75, 20, 45, 70, 85, 10, 28, 40, 50, 65, 80, 95]\)
+
+**Lógica de Resolución Rigurosa:**
+- **Preorden (NID):** Se anota cada nodo al contacto inicial descendente. Raíz **60** → subárbol **35** (20 → 10, 28) → subárbol **45** (40, 50) → subárbol **75** (70 → 65) → subárbol **85** (80, 95).
+  - **Resultado:** `[60, 35, 20, 10, 28, 45, 40, 50, 75, 70, 65, 85, 80, 95]`
+- **Inorden (IND):** Para obtener el nodo **35**, el algoritmo debe agotar recursivamente el extremo izquierdo profundo (10), ascender al padre (20), procesar su derecha (28) y finalmente subir a 35. Este rigor garantiza el ordenamiento clínico.
+  - **Resultado:** `[10, 20, 28, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 95]`
+
+<div style="border-left: 4px solid #2196f3; padding-left: 16px; margin: 12px 0;">
+  <strong>📌 Nota:</strong> El recorrido <strong>Inorden</strong> en un ABB siempre produce una lista totalmente ordenada, lo que resulta crucial para reportes clínicos y estadísticos.
+</div>
+
+---
+
+### 🧩 Ejercicio 4: Estructura por Niveles con Nombres
+
+**Datos por nivel de profundidad:**
+- **Nivel 1:** Erika
+- **Nivel 2:** Martha, Andrea
+- **Nivel 3:** Alicia, Francisco, Alma, Martín
+- **Nivel 4:** Juan
+
+**Análisis:** La eficiencia del recorrido es **agnóstica al tipo de dato** (*string* / *int*), dependiendo exclusivamente de la topología del árbol.
+
+**Recorrido Inorden resultante:** `[Juan, Alicia, Martha, Francisco, Erika, Alma, Andrea, Martín]`
+
+---
+
+### 🧩 Ejercicio 5: Representación de Grafos y Algoritmo de Dijkstra
+
+Para hallar rutas mínimas, el algoritmo de Dijkstra se restringe estrictamente a pesos no negativos. Su implementación digital se apoya en:
+
+1. **Matriz de Adyacencia:** Permite calcular el número de caminos de longitud \(k\) elevando la matriz a la potencia \(A^k\).
+2. **Matriz de Incidencia:** Documenta la relación entre vértices y aristas, facilitando el análisis de conectividad en infraestructuras de gran escala.
 
 <div style="border-left: 4px solid #ff9800; padding-left: 16px; margin: 12px 0;">
-  <strong>🔍 Conclusión:</strong> Contingencia – <strong style="color:#d32f2f;">Inválida</strong>
+  <strong>⚙️ Aplicación:</strong> Dijkstra es fundamental en sistemas de navegación GPS y enrutamiento de redes, donde se requiere la ruta óptima en tiempo real.
 </div>
-
----
-
-### 🧩 Ejercicio 2
-
-\[
-\{[p \land (p \lor q)] \rightarrow (r \rightarrow s) \land r \land \neg s\} \equiv p
-\]
-
-**Desarrollo:**
-- \([p \land (p \lor q)] \equiv p\) — Ley de Absorción
-- \((r \rightarrow s) \land r \equiv s\) — Modus Ponens (MP)
-- \(s \land \neg s \equiv F\) — Ley de Contradicción
-- \(p \rightarrow F \equiv \neg p \lor F\) — Definición de Implicación
-- \(\neg p \lor F \equiv \neg p\) — Ley de Identidad
-- **Resultado:** \(\neg p\) (Inválido)
-
-**Tabla de verdad** (resumida para no repetir todas las filas, pero se puede expandir):
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #f1f1f1;">
-    <tr><th style="border:1px solid #ddd;padding:6px;">\(p\)</th><th style="border:1px solid #ddd;padding:6px;">\(q\)</th><th style="border:1px solid #ddd;padding:6px;">\(r\)</th><th style="border:1px solid #ddd;padding:6px;">\(s\)</th>
-    <th style="border:1px solid #ddd;padding:6px;">Antecedente</th><th style="border:1px solid #ddd;padding:6px;">Consecuente</th>
-    <th style="border:1px solid #ddd;padding:6px;">Resultado</th><th style="border:1px solid #ddd;padding:6px;">\(\neg p\)</th></tr>
-  </thead>
-  <tbody>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <!-- ... (puedes completar el resto de filas si lo deseas) ... -->
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-  </tbody>
-</table>
-
-<div style="border-left: 4px solid #ff9800; padding-left: 16px; margin: 12px 0;">
-  <strong>🔍 Conclusión:</strong> Contingencia – <strong style="color:#d32f2f;">Inválida</strong>
-</div>
-
----
-
-### 🧩 Ejercicio 3
-
-\[
-(p \land q \land r) \lor (p \land q \land \neg r) \lor (p \land \neg q) \equiv p
-\]
-
-**Desarrollo de simplificación:**
-- \([(p \land q) \land (r \lor \neg r)] \lor (p \land \neg q)\) — Ley Distributiva
-- \([(p \land q) \land V] \lor (p \land \neg q)\) — Ley del Tercero Excluido
-- \((p \land q) \lor (p \land \neg q)\) — Ley de Identidad
-- \(p \land (q \lor \neg q)\) — Ley Distributiva
-- \(p \land V\) — Ley del Tercero Excluido
-- **Resultado:** \(p\) — Ley de Identidad
-
-**Tabla de verdad**
-
-<table style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #f1f1f1;">
-    <tr><th style="border:1px solid #ddd;padding:6px;">\(p\)</th><th style="border:1px solid #ddd;padding:6px;">\(q\)</th><th style="border:1px solid #ddd;padding:6px;">\(r\)</th>
-    <th style="border:1px solid #ddd;padding:6px;">\(\neg r\)</th><th style="border:1px solid #ddd;padding:6px;">\(\neg q\)</th>
-    <th style="border:1px solid #ddd;padding:6px;">\(p∧q∧r\)</th><th style="border:1px solid #ddd;padding:6px;">\(p∧q∧¬r\)</th>
-    <th style="border:1px solid #ddd;padding:6px;">\(p∧¬q\)</th><th style="border:1px solid #ddd;padding:6px;">Resultado</th><th style="border:1px solid #ddd;padding:6px;">\(p\)</th></tr>
-  </thead>
-  <tbody>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr style="background-color:#f9f9f9;"><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-    <tr><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">V</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td><td style="border:1px solid #ddd;padding:6px;text-align:center;">F</td></tr>
-  </tbody>
-</table>
-
-<div style="border-left: 4px solid #4caf50; padding-left: 16px; margin: 12px 0;">
-  <strong>🔍 Conclusión:</strong> Contingencia – <strong style="color:#2e7d32;">Válida</strong>
-</div>
-
----
-
-### 🧩 Ejercicio 4
-
-\[
-[(p \lor q) \land \neg p] \land (r \lor p) \equiv q \land \neg p \land r
-\]
-
-**Desarrollo de simplificación:**
-- \([(p \land \neg p) \lor (q \land \neg p)] \land (r \lor p)\) — Ley Distributiva
-- \([F \lor (q \land \neg p)] \land (r \lor p)\) — Ley de Contradicción
-- \((q \land \neg p) \land (r \lor p)\) — Ley de Identidad
-- \(q \land [\neg p \land (r \lor p)]\) — Ley Asociativa
-- \(q \land [(\neg p \land r) \lor (\neg p \land p)]\) — Ley Distributiva
-- \(q \land [(\neg p \land r) \lor F]\) — Ley de Contradicción
-- **Resultado:** \(q \land \neg p \land r\) — Ley de Identidad
-
-**Tabla de verdad** (se omite por brevedad, pero se puede incluir igual que los anteriores)
-
-<div style="border-left: 4px solid #4caf50; padding-left: 16px; margin: 12px 0;">
-  <strong>🔍 Conclusión:</strong> Contingencia – <strong style="color:#2e7d32;">Válida</strong>
-</div>
-
----
-
-### 🧩 Ejercicio 5
-
-\[
-\neg(p \rightarrow q) \lor (p \land q \land r) \equiv p \land (\neg q \lor r)
-\]
-
-**Desarrollo de simplificación:**
-- \(\neg(\neg p \lor q) \lor (p \land q \land r)\) — Definición de Implicación
-- \((p \land \neg q) \lor (p \land q \land r)\) — Ley de De Morgan e Involución
-- \(p \land [\neg q \lor (q \land r)]\) — Ley Distributiva
-- \(p \land [(\neg q \lor q) \land (\neg q \lor r)]\) — Ley Distributiva (interna)
-- \(p \land [V \land (\neg q \lor r)]\) — Ley del Tercero Excluido
-- **Resultado:** \(p \land (\neg q \lor r)\) — Ley de Identidad
-
-**Tabla de verdad** (resumida)
-
-<div style="border-left: 4px solid #4caf50; padding-left: 16px; margin: 12px 0;">
-  <strong>🔍 Conclusión:</strong> Contingencia – <strong style="color:#2e7d32;">Válida</strong>
-</div>
-
----
-
-<!-- ============================================ -->
-<!--       SECCIÓN: EJERCICIO APLICADO            -->
-<!-- ============================================ -->
-## 🤖 Ejercicio aplicado en un caso real
-
-### Planteamiento del problema
-En una clase de robótica educativa, los estudiantes deben programar un robot esférico (Sphero Mini) para que ejecute una acción de alerta (cambiar de color) solo cuando se cumplan simultáneamente dos condiciones físicas detectadas por sus sensores (un acelerómetro y un giroscopio).
-
-### Definición de proposiciones
-- **\(p\):** El robot está rodando hacia adelante.  
-- **\(q\):** El sensor detecta un choque o colisión.  
-- **\(r\):** El robot enciende sus luces.
-
-### Expresión simbólica
-La metodología del proyecto se describe como:
-
-\[
-(p \land q) \rightarrow r
-\]
-
-Traducción al lenguaje natural: *“Si el robot está rodando y detecta un choque, entonces se enciende la luz roja”*.
-
-### Análisis con lógica proposicional
-En la segunda fase, el estudiante debe entender el comportamiento de la implicación en diferentes casos:
-
-- **a)** Si el robot solo rueda, pero no choca (\(p\) es V, \(q\) es F), la luz no enciende.
-- **b)** Si el robot está quieto, pero alguien lo golpea (\(p\) es F, \(q\) es V), la luz tampoco se enciende.
-- **c)** La acción \(r\) solo es obligatoria para el programa cuando ambas condiciones son verdaderas al mismo tiempo.
-
-### Conclusión de resultados
-Este tipo de ejercicios prácticos permite que el aprendizaje no sea solo teórico. Al final del experimento, los estudiantes lograron mejorar sus aprendizajes en **0.97 puntos** en promedio. La lógica matemática se vuelve clave para la comprensión de conceptos abstractos necesarios en programación.
 
 ---
 
 <!-- ============================================ -->
 <!--         SECCIÓN: REFLEXIÓN PERSONAL          -->
 <!-- ============================================ -->
-## 💭 Reflexión personal
+## 💭 Conclusiones y Reflexión Personal
 
-### ¿Qué fue lo más difícil de entender?
-El mayor desafío consistió en identificar el contexto de aplicación preciso para cada ley lógica y regla de inferencia. Mediante la práctica constante, he optimizado mi razonamiento matemático en la resolución de ejercicios.
+### 🔹 Conclusiones Técnicas
 
-### ¿Qué temas comprendí mejor?
-Comprendí con precisión la estructura de las tablas de verdad, logrando clasificar sus funciones y reconocer patrones lógicos en las soluciones finales.
+- **Estructura:** Los árboles optimizan la organización al garantizar una única ruta entre nodos, eliminando la redundancia cíclica.
+- **Balanceo:** Estructuras como AVL y B-Trees son imperativas para prevenir la degradación del rendimiento en sistemas de producción.
+- **Compresión:** Huffman demuestra la elegancia de las matemáticas discretas aplicadas a la transmisión de datos (PNG, MP3).
+- **Inteligencia Artificial:** Los Árboles de Decisión constituyen el modelo predictivo jerárquico base para la clasificación y regresión en *Machine Learning*.
 
-### ¿Cómo puedo aplicar la lógica en mi carrera?
-La lógica constituye el lenguaje de bajo nivel fundamental para el control de flujo en estructuras condicionales y ciclos. Su aplicación permite optimizar algoritmos mediante la reducción de comparaciones redundantes, elevando la calidad técnica y la eficiencia en el desarrollo de software.
+### 🔹 Reflexión Personal
+
+> **Abraham Daniel Maza Lapo:**  
+> *"Este análisis vinculó la teoría pura con problemas reales. Es la base necesaria para abordar estructuras avanzadas y soluciones de software de alta escala."*
 
 ---
 
@@ -380,21 +284,21 @@ La lógica constituye el lenguaje de bajo nivel fundamental para el control de f
 ## 📌 Actividades
 
 <div align="center">
-  <table style="border-collapse: collapse; width: 70%;">
+  <table style="border-collapse: collapse; width: 80%;">
     <tr>
-      <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">
-        <a href="APEU1.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">🔬 Actividades Práctico Experimentales</a>
+      <td style="padding: 14px; text-align: center; border: 1px solid #ddd;">
+        <a href="APEU3.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">🔬 Práctico Experimentales</a>
       </td>
-      <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">
-        <a href="AAU1.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">📖 Actividades Autónomas</a>
+      <td style="padding: 14px; text-align: center; border: 1px solid #ddd;">
+        <a href="AAU3.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">📖 Autónomas</a>
       </td>
     </tr>
     <tr>
-      <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">
-        <a href="ACDU1.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">👨‍🏫 Actividad Contacto Docente</a>
+      <td style="padding: 14px; text-align: center; border: 1px solid #ddd;">
+        <a href="ACDU3.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">👨‍🏫 Contacto Docente</a>
       </td>
-      <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">
-        <a href="ESU1.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">📊 Evaluación Sumativa</a>
+      <td style="padding: 14px; text-align: center; border: 1px solid #ddd;">
+        <a href="ESU3.md" style="text-decoration: none; font-weight: bold; color: #0366d6;">📊 Evaluación Sumativa</a>
       </td>
     </tr>
   </table>
@@ -402,6 +306,11 @@ La lógica constituye el lenguaje de bajo nivel fundamental para el control de f
 
 ---
 
-<p align="center">
-  <a href="Portafolio.md" style="text-decoration: none; font-weight: bold; font-size: 1.2em; color: #0366d6;">🔙 Regresar al portafolio</a>
+<!-- ============================================ -->
+<!--       SECCIÓN: REGRESAR (BOTÓN ESTILIZADO)   -->
+<!-- ============================================ -->
+<p align="center" id="regresar">
+  <a href="Portafolio.md" style="display: inline-block; padding: 10px 28px; background-color: #0366d6; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">
+    🔙 Regresar al portafolio
+  </a>
 </p>
