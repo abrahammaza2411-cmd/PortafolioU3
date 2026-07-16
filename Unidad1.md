@@ -17,7 +17,7 @@
         <a href="Unidad2.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">2️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 2</h3>
-          <p style="margin:0; color:#586069;">Actividades y evaluaciones</p>
+          <p style="margin:0; color:#586069;">Actividades</p>
         </a>
       </td>
       <td align="center" style="padding:15px; width:200px; background-color:#f6f8fa; border-radius:8px;">
