@@ -19,7 +19,7 @@
         <a href="Unidad1.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">1️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 1</h3>
-          <p style="margin:0; color:#586069;">Introducción y primeros ejercicios</p>
+          <p style="margin:0; color:#586069;">Lógica proposiciona</p>
         </a>
       </td>
       <td align="center" style="padding:15px; width:200px;">
