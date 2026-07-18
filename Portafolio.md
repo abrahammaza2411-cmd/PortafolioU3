@@ -33,7 +33,7 @@
         <a href="Unidad3.md" style="display:block; text-decoration:none; color:inherit;">
           <span style="font-size:40px;">3️⃣</span>
           <h3 style="margin:8px 0 4px 0;">Unidad 3</h3>
-          <p style="margin:0; color:#586069;">Ejercicios avanzados</p>
+          <p style="margin:0; color:#586069;">Grafos y optimización</p>
         </a>
       </td>
     </tr>
