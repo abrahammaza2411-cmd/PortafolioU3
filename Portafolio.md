@@ -10,7 +10,7 @@
 
 ---
 
-## Navegación rápida
+## Navegación rápida (clic en los emojis)
 
 <div align="center">
   <table>
