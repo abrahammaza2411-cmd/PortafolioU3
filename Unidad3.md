@@ -227,11 +227,17 @@ Mediante el algoritmo de Dijkstra, se determinó que el camino más corto (en a�
 ### ¿Qué fue lo más difícil de entender?
 Diferenciar los recorridos de Euler (aristas) y Hamilton (vértices), y comprender la complejidad NP-completa de estos últimos.
 
+Al principio, resulta sencillo confundir conceptualmente ambos recorridos debido a que ambos buscan una cobertura total del grafo bajo ciertas restricciones. Sin embargo, la verdadera dificultad radicó en asimilar el abismo que existe entre ellos en términos de complejidad algorítmica. Mientras que determinar la existencia de un camino euleriano (pasar por todas las aristas) se resuelve de forma eficiente en tiempo polinomial mediante el análisis del grado de los vértices, el problema del camino hamiltoniano (visitar cada vértice exactamente una vez) nos introduce directamente en la complejidad de los problemas NP-completos. Comprender las implicaciones de que no exista un algoritmo eficiente en el peor de los casos para resolver este último, y cómo esto se vincula a desafíos clásicos como el problema del viajante (TSP), requirió un cambio importante en mi perspectiva sobre la eficiencia computacional.
+
 ### ¿Qué temas comprendí mejor?
 La representación matricial de grafos y cómo el álgebra lineal (potencias de matrices) facilita el conteo de caminos en sistemas computacionales.
 
+Me resultó muy intuitivo conectar las estructuras de datos discretas con el álgebra lineal a través de las matrices de adyacencia e incidencia. Lo que encontré más fascinante y claro fue la elegancia matemática detrás del conteo de caminos: el principio de que al elevar la matriz de adyacencia a una potencia $k$, el valor resultante en la posición $(i, j)$ representa con exactitud la cantidad de caminos de longitud $k$ que conectan a esos dos nodos. Esta abstracción no solo simplifica el análisis teórico, sino que facilita enormemente su traducción a código, permitiendo aprovechar la optimización de operaciones matriciales en los sistemas computacionales para evaluar la conectividad de redes complejas de manera masiva.
+
 ### ¿Cómo puedo aplicar la teoría de grafos en mi carrera?
 La teoría de grafos permite optimizar infraestructuras de red, diseñar algoritmos de enrutamiento más eficientes (como Dijkstra en GPS) y gestionar bases de datos relacionales.
+
+La teoría de grafos es un pilar fundamental en las Ciencias de la Computación con aplicaciones directas y transversales. En el ámbito del desarrollo de software y la ingeniería de sistemas, permite diseñar y optimizar la infraestructura de redes de datos y sistemas distribuidos. Es indispensable para implementar algoritmos de enrutamiento eficientes, como el algoritmo de Dijkstra o A*, esenciales en herramientas de navegación satelital (GPS), redes vehiculares o protocolos de comunicación IP. Asimismo, es clave para la resolución de dependencias en compiladores, el análisis de grandes volúmenes de datos en redes sociales y la transición hacia el modelado de datos complejos mediante bases de datos orientadas a grafos, las cuales optimizan las consultas donde las relaciones entre entidades son tan importantes como los datos mismos.
 
 ---
 
