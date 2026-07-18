@@ -29,9 +29,11 @@
           <p style="margin:0; color:#586069;">Teoría y práctica</p>
         </a>
       </td>
-      <td align="center" style="padding:15px; width:200px;">
+           <td align="center" style="padding:15px; width:200px;">
         <a href="Unidad3.md" style="display:block; text-decoration:none; color:inherit;">
-          <span style="font-size:40px;">3️⃣ <br> Unidad 3 <br> Ejercicios avanzados</span>
+          <span style="font-size:40px;">3️⃣</span>
+          <h3 style="margin:8px 0 4px 0;">Unidad 3</h3>
+          <p style="margin:0; color:#586069;">Ejercicios avanzados</p>
         </a>
       </td>
     </tr>
